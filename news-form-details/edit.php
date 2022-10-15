@@ -11,7 +11,7 @@
 
         $result=mysqli_query($con,$sql);
         if($result){
-            header('location:home.php');
+            header('location:../index.php');
         }else{
             die(mysqli_error($con));
         }
@@ -41,7 +41,7 @@
                     <label class="control-label">Select Company</label>
 
                     <select name="company_name" class="form-control">
-                        <option value="pick">Select Company</option>
+                        <option value="">Select Company</option>
                             <?php
                                 $sql = mysqli_query($con, "SELECT company_name From company");
                                 $row = mysqli_num_rows($sql);
@@ -54,17 +54,17 @@
 
                 <div class="form-group">
                     <label>Headline</label>
-                    <input type="emails" class="form-control" placeholder="Enter Your Headline" name="headline" autocomplete="off">
+                    <input type="emails" class="form-control" placeholder="Enter_Your_Headline" name="headline" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                     <label>URL</label>
-                    <input type="herf" class="form-control" placeholder="Enter Your URL" name="url" autocomplete="off">
+                    <input type="herf" class="form-control" placeholder="Enter_Your_URL" name="url" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                     <label>TAGS</label>
-                    <input type="text" class="form-control" placeholder="Enter Your Tags" name="tag" autocomplete="off">
+                    <input type="text" class="form-control" placeholder="Enter_Your_Tags" name="tag" autocomplete="off">
                 </div>
                 
                 <button type="submit" class="btn btn-primary" name="submit">Submit</button>

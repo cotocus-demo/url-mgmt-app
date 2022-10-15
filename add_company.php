@@ -1,5 +1,5 @@
 <?php
-    include 'connect.php';
+    include 'company_details/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="container">
-            <button class="btn btn-primary my-4"> <a href="index.php" class="text-light">Add Company</a></button>
+            <button class="btn btn-primary my-4"> <a href="company_details/index.php" class="text-light">Add Company</a></button>
 
             <h3 style="background-color: #D8A6A6; text-align: center; color: white; padding: 8px 5px 8px 5px;">Company Form Details</h3>
             <table class="table border border-primary">
@@ -48,8 +48,8 @@
                                 <td>'.$address.'</td>
 
                                 <td>
-                                    <button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">Edit</a></button>
-                                    <button class="btn btn-danger"><a href="delete.php? deleteid='.$id.'" class="text-light">Delete</a></button>
+                                    <button class="btn btn-primary"><a href="company_details/update.php?updateid='.$id.'" class="text-light">Edit</a></button>
+                                    <button class="btn btn-danger"><a href="company_details/delete.php?deleteid='.$id.'" class="text-light">Delete</a></button>
                                 </td>
                                 </tr>';
                             };

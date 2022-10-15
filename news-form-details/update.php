@@ -16,12 +16,12 @@
         $url=$_POST['url'];
         $tag=$_POST['tag'];
 
-        $sql="UPDATE news_details set id=$id, company_name='$company_name', headline='$headline', url='$url', tag='$tag' 
+        $sql="UPDATE news_details set id=$id,company_name='$company_name',headline='$headline',url='$url',tag='$tag' 
         where id=$id";
 
         $result=mysqli_query($con,$sql);
         if($result){
-            header('location:home.php');
+            header('location:../index.php');
         }else{
             die(mysqli_error($con));
         }
@@ -56,7 +56,7 @@
                                 $sql = mysqli_query($con, "SELECT company_name From company");
                                 $row = mysqli_num_rows($sql);
                                 while ($row = mysqli_fetch_array($sql)){
-                                echo "<option value='". $row['company_name'] ."'>" .$row['company_name'] ."</option>" ;
+                                echo "<option value=". $row['company_name'] .">" .$row['company_name'] ."</option>" ;
                                 }
                             ?>
                     </select>
@@ -64,17 +64,17 @@
 
                 <div class="form-group">
                     <label>Headline</label>
-                    <input type="emails" class="form-control" placeholder="Enter Your headline" name="headline" autocomplete="off"  value=<?php echo $headline;?>>
+                    <input type="text" class="form-control" placeholder="Enter_Your_headline" name="headline" autocomplete="off"  value=<?php echo $headline;?>>
                 </div>
 
                 <div class="form-group">
                     <label>URL</label>
-                    <input type="herf" class="form-control" placeholder="Enter Your url" name="url" autocomplete="off"  value=<?php echo $url;?>>
+                    <input type="herf" class="form-control" placeholder="Enter_Your_url" name="url" autocomplete="off"  value=<?php echo $url;?>>
                 </div>
 
                 <div class="form-group">
                     <label>Tags</label>
-                    <input type="text" class="form-control" placeholder="Enter Your tags" name="tag" autocomplete="off"  value=<?php echo $tag;?>>
+                    <input type="text" class="form-control" placeholder="Enter_Your_tags" name="tag" autocomplete="off" value=<?php echo $tag;?> >
                 </div>
                 
                 <button type="submit" class="btn btn-primary" name="submit">Update</button>

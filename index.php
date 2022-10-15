@@ -1,5 +1,5 @@
 <?php
-    include 'connect.php';
+    include 'news-form-details/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="container">
-            <button class="btn btn-dark my-4"><a href="index.php" class="text-light">Add News</a></button>
+            <button class="btn btn-dark my-4"><a href="news-form-details/edit.php" class="text-light">Add News</a></button>
 
             <h3 style="background-color: #ACE1F0 ; text-align: center; color: Black; padding: 8px 5px 8px 5px;">
                 News Form Details
@@ -48,8 +48,8 @@
                                         <td>'.$tag.'</td>
 
                                         <td>
-                                            <button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">Edit</a></button>
-                                            <button class="btn btn-danger"><a href="delete.php? deleteid='.$id.'" class="text-light">Delete</a></button>
+                                            <button class="btn btn-primary"><a href="news-form-details/update.php?updateid='.$id.'" class="text-light">Edit</a></button>
+                                            <button class="btn btn-danger"><a href="news-form-details/delete.php?deleteid='.$id.'" class="text-light">Delete</a></button>
                                         </td>
                                     </tr>';
                             };

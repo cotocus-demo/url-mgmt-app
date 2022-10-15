@@ -6,7 +6,7 @@
         $sql="delete from news_details where id=$id";
         $result=mysqli_query($con,$sql);
         if($result){
-            header('location:home.php');
+            header('location:../index.php');
         }else{
             die(mysqli_error($con));
         }
