@@ -51,7 +51,7 @@
                     <label class="control-label">Select Company</label>
 
                     <select name="company_name" class="form-control">
-                        <option value="pick">Select Company</option>
+                        <option value="">Select Company</option>
                             <?php
                                 $sql = mysqli_query($con, "SELECT company_name From company");
                                 $row = mysqli_num_rows($sql);
