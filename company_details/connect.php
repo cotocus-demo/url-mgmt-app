@@ -1,5 +1,5 @@
 <?php
-    $con = new mysqli('localhost', 'vijayji', 'AzooDKiryGLfjuvK', 'vijayji');
+    $con = new mysqli('localhost', 'root', '', 'vijayji');
     // $query="Select str.*,sr.name from news_details str, company sr where str.id=sr.name";
 
 
