@@ -47,11 +47,10 @@
         <div class="container mt-5" class="container mt-5 py-2" style="background-color: #8894C9; color: white; padding: 50px 50px 50px 50px;">
             <form method="post">
             <h4 class="text-center">Updated Your News Details</h4>
-            <div class="form-group">
+                <div class="form-group">
                     <label class="control-label">Select Company</label>
-
                     <select name="company_name" class="form-control">
-                        <option value="">Select Company</option>
+                        <option value="company_name">Select Company</option>
                             <?php
                                 $sql = mysqli_query($con, "SELECT company_name From company");
                                 $row = mysqli_num_rows($sql);
