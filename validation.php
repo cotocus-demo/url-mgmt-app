@@ -18,6 +18,6 @@
         $_SESSION['username'] = $name;
         header('location:index.php');
     }else{
-        header('location:new-login.php');
+        header('location:login.php');
     }
 ?>
